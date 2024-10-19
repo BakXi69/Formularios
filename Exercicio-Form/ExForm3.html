@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terceira Etapa</title>
+
+    <style>
+      
+      *{
+        margin: 0;
+        padding: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }  
+
+      h1{
+        text-align: center;
+        margin-top: 30px;
+        padding: 10px;
+      }
+
+      form{
+        text-align: center;
+      }
+
+      fieldset{
+        width: 150px;
+        height: 70px;
+        display: block;
+        align-items: center;
+        margin: auto;
+        padding: 3px;
+        margin-bottom: 23px;
+        
+      }
+
+      .mas{
+        padding: 4px;
+      }
+
+      
+      .button{
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .button input{
+            padding: 3px;
+            background-color: black;
+            color: white;
+            width: 70px;
+            border-radius: 4px;
+        }
+
+        .button input:hover{
+            background-color: white;
+            color: black;
+            transition: .5s;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <h1>Informe sua Idade e seu Sexo</h1>
+
+    <form action="Exform4.html" method="post">
+        <fieldset >
+            <legend>Sexo</legend>
+            
+            <div class="mas">
+                <input type="radio" name="sex" id="isexmas"> 
+                <label for="isexmas">Masculino</label> <br>
+            </div>
+                <div class="fem"> 
+                <input type="radio" name="sex" id="isexfem">
+                <label for="isexfem">Feminino</label>
+            </div>
+        </fieldset>
+
+        <div>
+            <label for="inum">Idade: </label>
+        <input type="range" name="num" id="inum" min="0" max="99" value="5" oninput="ival.innerHTML = Number(inum.value)">
+        
+        <output id="ival">5</output>
+
+        </div>
+
+
+        
+            <div class="button"><input type="submit" value="Enviar"></div>
+        
+
+    </form>
+    
+</body>
+</html>

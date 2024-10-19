@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda Etapa</title>
+
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h1{
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        form{
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        div{
+           padding: 10px;
+        }
+
+        .email{
+            margin-left: 6px;
+        }
+
+        .button{
+            width: 103%;
+        }
+        .button input{
+            padding: 3px;
+            background-color: black;
+            color: white;
+            width: 70px;
+            border-radius: 4px;
+        }
+
+        .button input:hover{
+            background-color: white;
+            color: black;
+            transition: .5s;
+        }
+      
+    </style>
+
+
+</head>
+<body>
+    <h1>Informe seu Email e sua Senha</h1>
+
+
+    <form action="post">
+        
+        <div class="email">
+            <label for="iemail">Email</label>
+            <input type="email" name="email" id="iemail" autocomplete="email" required>
+        </div>
+
+        <div>
+            <label for="isen">Senha</label>
+            <input type="password" name="Senha" id="isen" autocomplete="current-password" required>
+        </div>
+
+        <div class="button">
+            <input type="submit" value="Enviar">
+        </div>
+
+
+    </form>
+
+    
+</body>
+</html>
